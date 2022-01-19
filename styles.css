@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    min-width: 100vh;
+    min-height: 880px;
+    background-color: #060060;
+    position: relative;
+}
+
+.container2 {
+    min-width: 100vh;
+    min-height: 100px;
+    background-color: #060055;
+}
+
+::-webkit-scrollbar {
+    width: 2em;
+    background-color: #060060;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(purple, rgb(7, 128, 228));
+    border-radius: 100vw;
+    margin: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(143, 19, 143),rgb(7, 128, 228));
+    border: .25em solid rgb(167, 0, 167);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(rgb(105, 0, 105), rgb(0, 51, 83));
+}
+
+.backgroundvid {
+    position: relative;
+    background-image:url(livestream.gif);
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.header {
+    padding : 6px;
+    background-color: #060060;
+    max-width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.header:hover {
+    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.3);
+}
+
+.header nav a {
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maintext {
+    display: flex;
+    justify-content: start;
+    color: white;
+    font-family: Oswald, sans-serif;
+    font-size: 20pt;
+    font-weight: 400;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+}
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.navlinks ul li a {
+    color: violet;
+    text-decoration: none;
+    font-size: 30px;
+}
+.navlinks ul li a:hover {
+    color: rgb(158, 88, 158);
+    transition: 0.25s ease-in-out;
+}
+.navlinks ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(158, 88, 158);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li:hover::after {
+    width: 100%;    
+}
+
+.aboutme {
+    color:white;
+    font-size: 50pt;
+    font-family: Oswald;
+    text-align: center;
+}
+
+.goback {
+    color: black;
+    font-family: Oswald;
+    font-size: 15pt;
+    background-color: violet;
+    border-radius: 11px;
+    border: 5px solid purple;
+    padding: 6px;
+}
+
+.container a {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    text-decoration: none;
+}
